@@ -9,7 +9,7 @@
     body,
     html,
     .container {
-      height: 100%;
+      /* height: 100%; */
       padding: 0;
       margin: 0;
       overflow: hidden;
@@ -23,8 +23,20 @@
     <div>
       <p>注册</p>
       <p>登录</p>
+      <style>
+        .bgCol {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+      </style>
+      <div class="bgCol">
+
+      </div>
     </div>
-    <script>
+
+
+    <!-- <script>
       /**
        *  1. 通过script标签引入js文件
        * 2. 通过script标签引入js文件，js文件中有回调函数
@@ -33,30 +45,10 @@
       window.callback1 = function (data) {
         console.log(data);
       };
-    </script>
+    </script> -->
     <!-- <script src="http://192.168.31.46:8001/dom.js"></script> -->
-    <script src="">
-      const debounce = (fn, delay) => {
-        let timer = null;
-        return function() {
-          if (timer) clearSetTimeout(timer);
-          timer = setTimeout(() => {
-            fn.apply(this, arguments)
-            timer = null
-          }, delay)
-        }
-      }
-      const throttle = (fn, delay) => {
-        let timer = null
-        return function() {
-          if (timer) return
-          timer = setTimeout(() => {
-            fn.apply(this, arguments)
-            timer = null
-          })
-        }
-      }
-    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <script src="./js/count.js"></script>
 
   </body>
 </html>
