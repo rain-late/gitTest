@@ -42,3 +42,37 @@
 //   }
 // }
 // animate()
+
+// const obj = {}
+
+// for (let i = 0; i < 1000 * 10000; i++) {
+//   obj[i + ''] = i
+// }
+//  console.time('for in')
+//  obj['2000000']
+//  console.timeEnd('for in')
+//  console.time('delete')
+//   delete obj['2000000']
+//   console.timeEnd('delete')
+
+  // const obj = new Map()
+  // for (let i = 0; i < 1000 * 10000; i++) {
+  //   obj.set(i + '', i)
+  // }
+  // console.time('map')
+  // obj.has('20000000')
+  // console.timeEnd('map')
+
+  // console.time('map delete')
+  // obj.delete('20000000')
+  // console.timeEnd('map delete')
+
+  // const arr = [
+  //   {name: 'a', age: 20},
+  //   {name: 'b', age: 30},
+  //   {name: 'c', age: 40},
+  // ]
+  // const str = arr.reduce((s, item) => {
+  //   return `${s}${item.name} - ${item.age}\n`
+  // }, '')
+  // console.log(str)

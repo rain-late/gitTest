@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #000;
+    }
+    .box {
+      margin: 100px auto;
+      display: flex;
+      width: 150px;
+      height: 150px;
+      background-color: #ccc;
+      justify-content: center;
+      /* align-items: center; */
+      border-radius: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #000;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <!-- <span class="item"></span> -->
+  </div>
+</body>
+</html>
